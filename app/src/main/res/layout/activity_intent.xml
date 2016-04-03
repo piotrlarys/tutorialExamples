@@ -9,6 +9,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="tutorial.larys.info.zad1.IntentActivity">
 
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="sendButton"
+        android:text="Send" />
+
     <EditText
         android:id="@+id/ed_title"
         android:layout_width="match_parent"
@@ -20,24 +30,15 @@
 
     <EditText
         android:id="@+id/ed_message"
-        android:ems="10"
+        android:layout_below="@id/ed_title"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@id/button10"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@id/ed_title"
-        android:layout_above="@id/button"
+        android:ems="10"
         android:hint="Treść wiadomości"
         android:inputType="textMultiLine" />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Send"
-        android:id="@+id/button"
-        android:onClick="sendButton"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
 
 
 </RelativeLayout>

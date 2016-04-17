@@ -11,19 +11,10 @@ import android.os.Bundle;
 public class InfoDialogFragment extends DialogFragment {
 
 
-    @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle("Prosty dialog");
         builder.setMessage("Tutaj treść dialogu");
-
         return builder.create();
-    }
-
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-
     }
 }

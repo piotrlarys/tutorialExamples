@@ -9,8 +9,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 import tutorial.larys.info.zad1.R;
 
 /**
@@ -18,21 +16,19 @@ import tutorial.larys.info.zad1.R;
  */
 public class AnimalDetailFragment extends Fragment {
 
+    public static final String ANIMAL_ID = "extra.animal_id";
     private TextView title;
     private ImageView imageView;
     private TextView description;
-    public static final String ANIMAL_ID = "extra.animal.id";
-
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_animal_detail, container, false);
         title = (TextView) view.findViewById(R.id.title);
         imageView = (ImageView) view.findViewById(R.id.image);
         description = (TextView) view.findViewById(R.id.description);
 
-        if (getArguments() != null) {
+        if(getArguments() != null) {
             int animalId = getArguments().getInt(ANIMAL_ID);
             showAnimal(AnimalRepository.getAnimalList().get(animalId));
         }
@@ -45,5 +41,4 @@ public class AnimalDetailFragment extends Fragment {
         imageView.setImageResource(animal.getImage());
         description.setText(animal.getDescription());
     }
-
 }

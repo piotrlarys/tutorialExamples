@@ -7,7 +7,20 @@
         android:id="@+id/button20"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Info dialog"
-        android:onClick="infoDialog"/>
+        android:onClick="infoDialog"
+        android:text="Info dialog" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Wybrana opcja:" />
+
+    <TextView
+        android:id="@+id/selected_option_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Żadna" />
 
 </RelativeLayout>

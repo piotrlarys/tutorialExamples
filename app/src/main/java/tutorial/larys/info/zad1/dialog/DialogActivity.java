@@ -1,6 +1,7 @@
 package tutorial.larys.info.zad1.dialog;
 
 import android.app.Activity;
+import android.app.DatePickerDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
@@ -22,8 +23,12 @@ public class DialogActivity extends Activity implements DialogInterface.OnClickL
     public void infoDialog(View view) {
 //        InfoDialogFragment infoDialogFragment = new InfoDialogFragment();
 //        infoDialogFragment.show(getFragmentManager(), null);
-        SingleListElementDialogFragment singleListElementDialogFragment = new SingleListElementDialogFragment();
-        singleListElementDialogFragment.show(getFragmentManager(), null);
+//        SingleListElementDialogFragment singleListElementDialogFragment = new SingleListElementDialogFragment();
+//        singleListElementDialogFragment.show(getFragmentManager(), null);
+//        TimePickerDialogFragment pickerDialogFragment = new TimePickerDialogFragment();
+//        pickerDialogFragment.show(getFragmentManager(), null);
+        DatePickerDialogFragment pickerDialogFragment = new DatePickerDialogFragment();
+        pickerDialogFragment.show(getFragmentManager(), null);
     }
 
     @Override

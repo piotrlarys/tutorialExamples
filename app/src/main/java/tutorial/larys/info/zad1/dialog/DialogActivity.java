@@ -20,8 +20,10 @@ public class DialogActivity extends Activity implements DialogInterface.OnClickL
     }
 
     public void infoDialog(View view) {
-        InfoDialogFragment infoDialogFragment = new InfoDialogFragment();
-        infoDialogFragment.show(getFragmentManager(), null);
+//        InfoDialogFragment infoDialogFragment = new InfoDialogFragment();
+//        infoDialogFragment.show(getFragmentManager(), null);
+        SingleListElementDialogFragment singleListElementDialogFragment = new SingleListElementDialogFragment();
+        singleListElementDialogFragment.show(getFragmentManager(), null);
     }
 
     @Override

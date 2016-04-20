@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_example_one"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@android:drawable/sym_action_email"
+        android:title="Jeden"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/menu_example_two"
+        android:showAsAction="ifRoom"
+        android:title="Dwa"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/menu_example_three"
+        android:showAsAction="ifRoom|withText"
+        android:title="Trzy"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/menu_example_four"
+        android:showAsAction="ifRoom|withText"
+        android:title="Cztery"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/menu_example_five"
+        android:showAsAction="ifRoom|withText"
+        android:title="Pięć"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/menu_example_six"
+        android:showAsAction="ifRoom|withText"
+        android:title="Sześć"
+        tools:ignore="AppCompatResource" />|
+</menu>

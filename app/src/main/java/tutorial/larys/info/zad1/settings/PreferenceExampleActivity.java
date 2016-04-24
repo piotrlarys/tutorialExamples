@@ -41,6 +41,11 @@ public class PreferenceExampleActivity extends PreferenceActivity {
         iceCreamFlavour = (TextView) findViewById(R.id.ice_cream_flavour);
         ringtone = (TextView) findViewById(R.id.ringtone);
 
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 
         boolean lightEnabled = preferences.getBoolean(PREF_LIGHT, false);
@@ -57,9 +62,12 @@ public class PreferenceExampleActivity extends PreferenceActivity {
         washingMachine.setText(washingMachineValue);
         name.setText(nameValue);
         animal.setText(animalValue);
-        iceCreamFlavour.setText(iceCreamFlavoursValues.toString());
-        ringtone.setText(ringtoneValue);
 
+        if (iceCreamFlavoursValues != null) {
+            iceCreamFlavour.setText(iceCreamFlavoursValues.toString());
+        }
+
+        ringtone.setText(ringtoneValue);
     }
 
     public static class PreferencesFragment extends PreferenceFragment {
